@@ -1,0 +1,88 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.center {
+    text-align: center; /* Căn giữa ngang */
+    vertical-align: middle; /* Căn giữa dọc */
+}
+
+.pagination a {
+    color: red;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 1px solid red;
+    margin: 0 4px;
+}
+  
+.pagination a.active {
+    background-color:red;
+    color: var(--bs-light);
+    border: 1px solid yellow;
+}
+  
+.pagination a:hover:not(.active) {background-color: red;
+color:#e6e6e6;}
+
+.nav.nav-tabs .nav-link.active {
+    border-bottom: 2px solid var(--bs-secondary) !important;
+}
+
+.page-item {
+    list-style-type: none;
+    margin: 0 0.5rem;
+}
+
+.page-item a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: #333;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+.page-item a.active {
+    background-color: #d21a0d;
+    color: #fff;
+}
+
+.page-item a:hover {
+    background-color: #e6e6e6;
+}
+
+
+
+.product-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* .product-actions {
+    justify-content: flex-end;
+} */
+
+.product-actions a,
+.product-actions form {
+    margin-right: 10px;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.delete-button i {
+    color: #FFD43B;
+}
+
+.edit-link i {
+    color: #ff0000;
+}
